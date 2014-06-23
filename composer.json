@@ -5,10 +5,17 @@
 		"license": "MIT",
 		"require": {
 			"laravel/framework": "4.2.*",
-			"opensolutions/smarty": "*" 
+			"smarty/smarty" : "3.1.*"
 		},
 		"autoload": {
-
+		  "classmap": [
+         	"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+			]
 		},
 		"scripts": {
 			"post-install-cmd": [
