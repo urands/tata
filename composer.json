@@ -3,6 +3,11 @@
 		"description": "CMS Tata",
 		"keywords": ["framework", "laravel", "tata", "cms"],
 		"license": "MIT",
+		"version": "0.1.1",
+		 "repositories": [{
+            "type": "vcs",
+            "url": "https://github.com/urands/tata"
+        }],
 		"require": {
 			"laravel/framework": "4.2.*",
 			"smarty/smarty" : "3.1.*"
