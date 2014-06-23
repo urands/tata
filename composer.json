@@ -17,5 +17,5 @@
     },
     "autoload": {
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
