@@ -1,21 +1,29 @@
 {
-    "name": "uran/tata",
-    "description": "CMS Tata 2.0 for Laravel 5",
-    "keywords": ["tata", "laravel", "cms"],
-    "license": "GPLv2",
-    "authors": [
-        {
-            "name": "Bellavin Yuriy",
-            "email": "ds@inbox.ru"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0",
-        "laravel/laravel": "4.x",
-    },
-    "require-dev": {
-    },
-    "autoload": {
-    },
-    "minimum-stability": "stable"
+		"name": "urands/tata",
+		"description": "CMS Tata",
+		"keywords": ["framework", "laravel", "tata", "cms"],
+		"license": "MIT",
+		"require": {
+			"laravel/framework": "4.2.*"
+		},
+		"autoload": {
+
+		},
+		"scripts": {
+			"post-install-cmd": [
+				"php artisan clear-compiled",
+				"php artisan optimize"
+			],
+			"post-update-cmd": [
+				"php artisan clear-compiled",
+				"php artisan optimize"
+			],
+			"post-create-project-cmd": [
+				"php artisan key:generate"
+			]
+		},
+		"config": {
+			"preferred-install": "dist"
+		},
+		"minimum-stability": "stable"
 }
