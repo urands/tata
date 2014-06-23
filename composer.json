@@ -1,0 +1,21 @@
+{
+    "name": "uran/tata",
+    "description": "CMS Tata 2.0 for Laravel 5",
+    "keywords": ["tata", "laravel", "cms"],
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Bellavin Yuriy",
+            "email": "ds@inbox.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "laravel/laravel": "4.x",
+    },
+    "require-dev": {
+    },
+    "autoload": {
+    },
+    "minimum-stability": "dev"
+}
