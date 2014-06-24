@@ -17,6 +17,18 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+		$smarty = new Smarty();
+		
+		//$smarty->debugging = true;
+		
+		$smarty->setTemplateDir(app_path().'/views');
+		$smarty->setCompileDir(storage_path().'/compile');
+		$smarty->setConfigDir(app_path().'/views');
+		$smarty->setCacheDir(storage_path().'/cache');
+
+		return $smarty->display('index.php');
+		
+		
 		return View::make('hello');
 	}
 

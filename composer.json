@@ -19,6 +19,7 @@
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
+			"core/core.php",
 			"app/tests/TestCase.php"
 			]
 		},
@@ -38,5 +39,5 @@
 		"config": {
 			"preferred-install": "dist"
 		},
-		"minimum-stability": "stable"
+		"minimum-stability": "dev"
 }

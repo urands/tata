@@ -10,10 +10,13 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+Route::get('/', 'HomeController@showWelcome' );
 /*
-Route::get('/', function()
+function()
 {
-	return View::make('hello');
+	return Redirect::action('HomeController@showWelcome');
+	//return Smarty::make('hello');
 });
 */
 
