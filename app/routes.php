@@ -11,6 +11,22 @@
 |
 */
 
+\Tata\TataCore::Routers();
+
+
+Route::group(array('prefix' => 'admin'), function()
+{
+
+    Route::get('user', function()
+    {
+        return "group admin";
+    });
+
+});
+
+
+
+
 Route::get('/', 'HomeController@showWelcome' );
 /*
 function()

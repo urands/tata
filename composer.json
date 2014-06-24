@@ -10,16 +10,17 @@
         }],
 		"require": {
 			"laravel/framework": "4.2.*",
-			"smarty/smarty" : "3.1.*"
+			"smarty/smarty" : "3.1.*",
+            "barryvdh/laravel-debugbar": "1.x"
 		},
 		"autoload": {
 		  "classmap": [
-         	"app/commands",
+         		"app/commands",
 			"app/controllers",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
-			"core/core.php",
+			"core",
 			"app/tests/TestCase.php"
 			]
 		},

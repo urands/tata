@@ -26,14 +26,18 @@ class HomeController extends BaseController {
 		$smarty->setConfigDir(app_path().'/views');
 		$smarty->setCacheDir(storage_path().'/cache');
 		
-		Core::test();
+		//Core::test();
+
+       // Tata\TataCore::test();
+
+        Debug::info($this);
 
 		return $smarty->display('index.php');
 		
+		//return View::make('package::view.name');
 		
 		
-		
-		return View::make('hello');
+		//return View::make('test2345');
 	}
 
 }

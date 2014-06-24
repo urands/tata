@@ -118,7 +118,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
+		'Tata\TataCoreServiceProvider',
+		'Tata\TataModulesServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
 	),
 
 	/*
@@ -184,6 +186,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+        'Tata'            => 'Tata\TataCoreServiceProvider',
+        'Debug'           => 'Barryvdh\Debugbar\Facade',
+
 
 	),
 
