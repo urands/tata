@@ -25,8 +25,12 @@ class HomeController extends BaseController {
 		$smarty->setCompileDir(storage_path().'/compile');
 		$smarty->setConfigDir(app_path().'/views');
 		$smarty->setCacheDir(storage_path().'/cache');
+		
+		Core::test();
 
 		return $smarty->display('index.php');
+		
+		
 		
 		
 		return View::make('hello');

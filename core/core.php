@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class Tata\Core extends ServiceProvider {
+class Core extends ServiceProvider {
 
     public function register()
     {
@@ -11,6 +11,12 @@ class Tata\Core extends ServiceProvider {
             return new Foo;
         });
     }
+	
+	public function test(){
+	   
+	   echo "core send";
+	
+	}
 
 }
 
