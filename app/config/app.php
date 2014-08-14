@@ -120,7 +120,6 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Tata\TataCoreServiceProvider',
 		'Tata\TataModulesServiceProvider',
-        'Barryvdh\Debugbar\ServiceProvider',
 	),
 
 	/*
@@ -187,7 +186,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Tata'            => 'Tata\TataCoreServiceProvider',
-        'Debug'           => 'Barryvdh\Debugbar\Facade',
+//        'Debug'           => 'Barryvdh\Debugbar\Facade',
 
 
 	),

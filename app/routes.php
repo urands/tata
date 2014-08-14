@@ -11,7 +11,7 @@
 |
 */
 
-\Tata\TataCore::Routers();
+//\Tata\TataCore::Routers();
 
 
 Route::group(array('prefix' => 'admin'), function()
@@ -25,7 +25,12 @@ Route::group(array('prefix' => 'admin'), function()
 });
 
 
+Route::get('project.get/{slug}','ProjectController@ajax');
 
+Route::get('project.type/{slug}','ProjectController@type');
+
+
+Route::resource('project','ProjectController');
 
 Route::get('/', 'HomeController@showWelcome' );
 /*

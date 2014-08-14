@@ -30,14 +30,14 @@ class HomeController extends BaseController {
 
        // Tata\TataCore::test();
 
-        Debug::info($this);
+      //  Debug::info($this);
 
 		return $smarty->display('index.php');
 		
 		//return View::make('package::view.name');
 		
 		
-		//return View::make('test2345');
+		return View::make('repository.project.show');
 	}
 
 }

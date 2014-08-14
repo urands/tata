@@ -28,9 +28,9 @@ class TataCoreServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-        $this->app['tata'] = $this->app->share(function($app) {
-            return new Tata\TataCore;
-        });
+  //      $this->app['tata'] = $this->app->share(function($app) {
+//            return new Tata\TataCore;
+//        });
 	}
 
 	/**
