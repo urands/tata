@@ -11,7 +11,7 @@
 |
 */
 
-\Tata\TataCore::Routers();
+//\Tata\TataCore::Routers();
 
 
 Route::group(array('prefix' => 'admin'), function()
@@ -25,9 +25,27 @@ Route::group(array('prefix' => 'admin'), function()
 });
 
 
+//Route::post('project.save/{slug}','ProjectController@update');
 
+//Route::post('project/create','ProjectController@create');
 
-Route::get('/', 'HomeController@showWelcome' );
+//Route::post('project/store','ProjectController@store');
+
+Route::get('projects','ProjectController@projects');
+
+Route::get('project.get/{slug}','ProjectController@ajax');
+
+Route::get('project.browser/{slug}','ProjectController@browser');
+
+Route::get('project.list/{slug}','ProjectController@listdoc');
+
+Route::get('project.ulist/{slug}','ProjectController@ulistdoc');
+
+Route::resource('project','ProjectController');
+
+Route::resource('object','ObjectController');
+
+Route::get('/', 'ProjectController@projects' );
 /*
 function()
 {

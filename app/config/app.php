@@ -120,7 +120,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Tata\TataCoreServiceProvider',
 		'Tata\TataModulesServiceProvider',
-        'Barryvdh\Debugbar\ServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
+		'Former\FormerServiceProvider',
 	),
 
 	/*
@@ -187,9 +188,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Tata'            => 'Tata\TataCoreServiceProvider',
-        'Debug'           => 'Barryvdh\Debugbar\Facade',
-
-
+        'Sentry'		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+        'Former' 		  => 'Former\Facades\Former',
 	),
 
 );

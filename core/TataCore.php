@@ -20,7 +20,7 @@ class TataCore extends Facade {
 
         $uri = \Request::path();
 
-        \Debug::info($uri);
+//        \Debug::info($uri);
 
 
 /*
@@ -38,11 +38,11 @@ class TataCore extends Facade {
 */
         \Route::any( $uri, function(){
             $components =  \DB::table('pages')->get();
-            foreach ($components as $component){
-                \Debug::info($component);
-                \App::action($component->bind);
+//            foreach ($components as $component){
+ //               \Debug::info($component);
+//                \App::action($component->bind);
 
-            }
+//            }
         });
     }
 

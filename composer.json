@@ -4,15 +4,23 @@
 		"keywords": ["framework", "laravel", "tata", "cms"],
 		"license": "MIT",
 		"version": "0.1.1",
-		 "repositories": [{
-            "type": "vcs",
-            "url": "https://github.com/urands/tata"
-        }],
 		"require": {
 			"laravel/framework": "4.2.*",
 			"smarty/smarty" : "3.1.*",
-            "barryvdh/laravel-debugbar": "1.x"
+			"gzero/eloquent-tree": "v0.4",
+			"stevemo/cpanel": "dev-master",
+			"way/generators": "~2.0",
+			"cartalyst/sentry": "2.1.*"
+			
 		},
+		"repositories": [{
+        "type": "composer",
+        "url": "https://packages.cartalyst.com"
+		},{
+            "type": "vcs",
+            "url": "https://github.com/urands/tata"
+        }],
+
 		"autoload": {
 		  "classmap": [
          		"app/commands",
