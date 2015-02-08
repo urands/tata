@@ -8,9 +8,10 @@
 			"laravel/framework": "4.2.*",
 			"smarty/smarty" : "3.1.*",
 			"gzero/eloquent-tree": "v0.4",
-			"stevemo/cpanel": "dev-master",
 			"way/generators": "~2.0",
-			"cartalyst/sentry": "2.1.*"
+			"zizaco/confide": "~4.3@dev",
+			"zizaco/entrust": "1.2.*@dev"
+
 			
 		},
 		"repositories": [{

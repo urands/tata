@@ -120,8 +120,9 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Tata\TataCoreServiceProvider',
 		'Tata\TataModulesServiceProvider',
-		'Cartalyst\Sentry\SentryServiceProvider',
-		'Former\FormerServiceProvider',
+		'Zizaco\Confide\ServiceProvider',
+		'Zizaco\Entrust\EntrustServiceProvider',
+		
 	),
 
 	/*
@@ -188,8 +189,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Tata'            => 'Tata\TataCoreServiceProvider',
-        'Sentry'		  => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-        'Former' 		  => 'Former\Facades\Former',
+        'Confide'    => 'Zizaco\Confide\Facade',
+        'Entrust' => 'Zizaco\Entrust\EntrustFacade'
 	),
 
 );
